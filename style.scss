@@ -342,11 +342,41 @@ ul {
     }
 }
 
-.cards {
-    height: 5rem;
+.card-section {
+    height: 30vh;
+    margin: 5rem 0;
+}
 
-    &::after {
-        content: "";
+.cards {
+    margin: 5rem 0;
+    color: $color2;
+    font-size: 2rem;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    
+
+    & .card1 {
+        border: 3px $color2 solid;
+        height: 20rem;
+        width: max-content;
+        background-image: url("../img/gallery/Plum-Mockup-scaled.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        & .cardtext {
+            text-align: center;
+            color:$color2;
+            padding-top: 2.5rem;
+            background-color: rgba(24, 48, 72, 0.7);
+            
+            
+        }
     }
+
+    
 }
 

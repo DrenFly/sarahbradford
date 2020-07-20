@@ -348,9 +348,31 @@ ul {
         height: 10vh;
         bottom: 100px; } }
 
+.card-section {
+  height: 30vh;
+  margin: 5rem 0; }
+
 .cards {
-  height: 5rem; }
-  .cards::after {
-    content: ""; }
+  margin: 5rem 0;
+  color: #C87247;
+  font-size: 2rem;
+  height: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  text-align: center; }
+  .cards .card1 {
+    border: 3px #C87247 solid;
+    height: 20rem;
+    width: max-content;
+    background-image: url("../img/gallery/Plum-Mockup-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .cards .card1 .cardtext {
+      text-align: center;
+      color: #C87247;
+      padding-top: 2.5rem;
+      background-color: rgba(24, 48, 72, 0.7); }
 
 /*# sourceMappingURL=style.css.map */
