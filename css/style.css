@@ -26,14 +26,14 @@
 .menu {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   opacity: 0.9;
   visibility: hidden; }
   @media screen and (min-width: 899px) and (max-width: 2500px) {
     .menu {
       visibility: hidden;
       float: none;
-      width: 100%;
+      width: 100vw;
       min-height: 0; } }
   .menu.show {
     visibility: visible;
@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     overflow: hidden; }
     @media screen and (max-width: 768px) {
@@ -245,6 +245,7 @@ ul {
   background-position: 50% 50%; }
   @media screen and (min-width: 299px) and (max-width: 1000px) {
     .header-image {
+      width: 100%;
       grid-column: 1;
       background-position: 50% 50%; } }
 
@@ -351,21 +352,33 @@ ul {
 .card-section {
   height: 30vh;
   margin: 5rem 0; }
+  @media screen and (min-width: 350px) and (max-width: 900px) {
+    .card-section {
+      height: 100%;
+      margin: 5rem 0; } }
 
 .cards {
-  margin: 5rem 0;
   color: #C87247;
   font-size: 2rem;
-  height: 5rem;
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  grid-gap: 1rem;
   align-items: center;
   text-align: center; }
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+    .cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr); } }
+  .cards .card {
+    width: 100%; }
+    .cards .card:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-out; }
   .cards .card1 {
     border: 3px #C87247 solid;
     height: 20rem;
-    width: max-content;
     background-image: url("../img/gallery/Plum-Mockup-scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat; }
@@ -373,6 +386,30 @@ ul {
       text-align: center;
       color: #C87247;
       padding-top: 2.5rem;
-      background-color: rgba(24, 48, 72, 0.7); }
+      background-color: rgba(24, 48, 72, 0.9); }
+  .cards .card2 {
+    border: 3px #C87247 solid;
+    height: 20rem;
+    background-image: url("../img/gallery/Clean-Water-Intiative-mockup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end; }
+    .cards .card2 .cardtext {
+      text-align: center;
+      color: #C87247;
+      padding-top: 2.5rem;
+      background-color: rgba(24, 48, 72, 0.9); }
+  .cards .card3 {
+    border: 3px #C87247 solid;
+    height: 20rem;
+    background-image: url("../img/gallery/Join-our-team-mockup-1-scaled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end; }
+    .cards .card3 .cardtext {
+      text-align: center;
+      color: #C87247;
+      padding-top: 2.5rem;
+      background-color: rgba(24, 48, 72, 0.9); }
 
 /*# sourceMappingURL=style.css.map */

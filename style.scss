@@ -184,6 +184,7 @@ ul {
     background-position: 50% 50%;
 
     @media screen and (min-width: 299px) and (max-width: 1000px) {
+        width: 100%;
         grid-column: 1;
         background-position: 50% 50%;
         
@@ -345,24 +346,46 @@ ul {
 .card-section {
     height: 30vh;
     margin: 5rem 0;
+    
+    @media screen and (min-width: 350px) and (max-width: 900px) {
+        height: 100%;
+        margin: 5rem 0;
+         
+    }
 }
 
 .cards {
-    margin: 5rem 0;
+    
     color: $color2;
     font-size: 2rem;
-    height: 5rem;
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    grid-gap: 1rem;
     align-items: center;
     text-align: center;
+
+    @media screen and (min-width: 500px) and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        
+        
+    }
+
+    & .card {
+        width: 100%;
+        &:hover {
+            transform: scale(1.1);
+            @include easeOut;
+        }
+    }
     
 
     & .card1 {
         border: 3px $color2 solid;
         height: 20rem;
-        width: max-content;
+        
         background-image: url("../img/gallery/Plum-Mockup-scaled.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -371,7 +394,45 @@ ul {
             text-align: center;
             color:$color2;
             padding-top: 2.5rem;
-            background-color: rgba(24, 48, 72, 0.7);
+            background-color: rgba(24, 48, 72, 0.9);
+            
+            
+        }
+    }
+
+    & .card2 {
+        border: 3px $color2 solid;
+        height: 20rem;
+        
+        background-image: url("../img/gallery/Clean-Water-Intiative-mockup.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: end;
+
+        & .cardtext {
+            text-align: center;
+            color:$color2;
+            padding-top: 2.5rem;
+            background-color: rgba(24, 48, 72, 0.9);
+            
+            
+        }
+    }
+
+    & .card3 {
+        border: 3px $color2 solid;
+        height: 20rem;
+        
+        background-image: url("../img/gallery/Join-our-team-mockup-1-scaled.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: end;
+
+        & .cardtext {
+            text-align: center;
+            color:$color2;
+            padding-top: 2.5rem;
+            background-color: rgba(24, 48, 72, 0.9);
             
             
         }
