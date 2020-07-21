@@ -117,6 +117,35 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.graphic-container {
+  max-width: 1500px;
+  margin: auto; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 30vh);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2rem; }
+  .gallery img {
+    width: 100%;
+    border: 3px #C87247 solid;
+    padding: 20px;
+    cursor: pointer; }
+    .gallery img:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-out; }
+
+#contactform {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 20vh;
+  grid-gap: 2rem;
+  font-size: 2rem;
+  color: #C87247;
+  margin-top: 5rem; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -124,6 +153,10 @@
 
 html {
   font-family: "Comfortaa", Sans-serif, cursive; }
+
+body {
+  margin: 0;
+  padding: 0; }
 
 @media screen and (max-width: 899px) {
   .main-menu {

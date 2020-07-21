@@ -1,5 +1,8 @@
 @import "config";
 @import "nav";
+@import "graphic";
+@import "web";
+@import "contact";
 
 * {
     box-sizing: border-box;
@@ -9,13 +12,12 @@
 
 html {
     font-family: "Comfortaa", Sans-serif, cursive;
-    //max-width: 1500px;
-    //margin: auto;
-    
+        
 }
 
 body {
-    
+    margin: 0;
+    padding: 0;
     
 }
 

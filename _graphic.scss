@@ -1,0 +1,26 @@
+.graphic-container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 30vh);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+
+    & img { 
+        width: 100%;
+        border: 3px $color2 solid;
+        padding: 20px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+            @include easeOut;
+        }
+        
+    }
+}

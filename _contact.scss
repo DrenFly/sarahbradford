@@ -1,0 +1,9 @@
+#contactform {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 20vh;
+    grid-gap: 2rem;
+    font-size: 2rem;
+    color: $color2;
+    margin-top: 5rem;
+}
