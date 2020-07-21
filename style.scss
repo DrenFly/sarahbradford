@@ -9,15 +9,15 @@
 
 html {
     font-family: "Comfortaa", Sans-serif, cursive;
-    max-width: 1500px;
-    margin: auto;
+    //max-width: 1500px;
+    //margin: auto;
     
 }
 
 body {
     color: white;
-    
-    
+    max-width: 1500px;
+    margin: auto;
     
 }
 
@@ -376,7 +376,7 @@ ul {
     & .card {
         width: 100%;
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             @include easeOut;
         }
     }
