@@ -49,7 +49,7 @@
     &:target {
         opacity: 1;
         visibility: visible;
-        @include easeOut;
+        transition: all 0.5s ease-in;
     }
 
     .close {
@@ -62,13 +62,12 @@
             top: 2rem;
             right: 5.5rem;
             line-height: 2.5rem;    
-            @include easeOut;
             z-index: 3;
-            
+            transition: all 0.5s ease-out;    
         }
 
         &:hover {
-            color: $color2;
+            color: white;
             @include easeOut;
         }
     }
@@ -89,7 +88,7 @@
         }
 
         &:hover {
-            color: $color2;
+            color: white;
             @include easeOut;
         }
     }
@@ -110,7 +109,7 @@
         }
 
         &:hover {
-            color: $color2;
+            color: white;
             @include easeOut;
         }
     }
@@ -122,13 +121,10 @@
         box-shadow: 0 2rem 4rem rgba($color1, .5);
 
         img {
-            
             min-height: 100%;
             border: 10px $color2 solid;
-            //width: 100%;
             max-height: 100%;
         }
-
         
     }
 }
