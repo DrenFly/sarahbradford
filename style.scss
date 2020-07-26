@@ -74,6 +74,10 @@ ul {
         font-weight: 900;
         min-height: 60px;
 
+        & #logtext {
+            font-size: 1rem;
+        }
+
         @media screen and (max-width: 900px) {
             visibility: visible;
             margin-left: 10px;   
@@ -254,8 +258,7 @@ ul {
 }
 
 .body-text {
-    padding-top: 15px;
-    
+    padding-top: 15px;    
     
     @media screen and (max-width: 899px) {
        grid-row: 1;

@@ -75,15 +75,21 @@
       transform: translate3d(0, 0, 0); }
     .menu-1 .portrait {
       width: 250px;
-      height: 250px;
+      height: 270px;
       font-size: 10rem;
       color: #C87247;
       border: 5px #C87247 solid;
       text-align: center; }
+      .menu-1 .portrait .logtext {
+        font-size: 4rem;
+        margin-bottom: 1rem; }
+        @media screen and (max-width: 768px) {
+          .menu-1 .portrait .logtext {
+            font-size: 2.4rem; } }
       @media screen and (max-width: 768px) {
         .menu-1 .portrait {
           width: 150px;
-          height: 150px;
+          height: 170px;
           font-size: 6rem; } }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -136,7 +142,7 @@
   @media screen and (min-width: 300px) and (max-width: 699px) {
     .gallery {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(12, 30vh); } }
+      grid-template-rows: repeat(12, min-content); } }
   .gallery img {
     width: 100%;
     border: 3px #C87247 solid;
@@ -209,7 +215,8 @@
     .popup__img img {
       min-height: 100%;
       border: 10px #C87247 solid;
-      max-height: 100%; }
+      max-height: 100%;
+      min-width: 100%; }
 
 .web-container {
   color: white;
@@ -353,6 +360,8 @@ ul {
     border: 5px #C87247 solid;
     font-weight: 900;
     min-height: 60px; }
+    .menu-link:first-child #logtext {
+      font-size: 1rem; }
     @media screen and (max-width: 900px) {
       .menu-link:first-child {
         visibility: visible;

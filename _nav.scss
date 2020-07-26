@@ -114,15 +114,25 @@
 
         .portrait {
             width: 250px;
-            height: 250px;
+            height: 270px;
             font-size: 10rem;
             color: $color2;
             border: 5px $color2 solid;
             text-align: center;
+
+            & .logtext {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+                
+                @include mediaMd {
+                    
+                    font-size: 2.4rem;
+                }
+            }
              
             @include mediaMd {
                 width: 150px;
-                height: 150px;
+                height: 170px;
                 font-size: 6rem;
             }
         }
