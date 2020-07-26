@@ -25,7 +25,10 @@ body {
 
 
 .main-menu {
-    
+    border-bottom: 1px $color2 solid;
+    -webkit-box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.47);
+    -moz-box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.47);
+    box-shadow: 6px 6px 20px 1px rgba(0,0,0,0.47);
     
 
     @media screen and (max-width: 899px) {
@@ -50,6 +53,7 @@ ul {
     }
     
 }
+
 
 .menu-link {
     text-decoration: none;
